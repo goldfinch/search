@@ -1,5 +1,15 @@
 1) add config search.yml and register searchable object
 
+```
+---
+Name: app-search
+After:
+  - "#goldfinch-search"
+------
+Goldfinch\Search\Search:
+  ...
+```
+
 2) add searchable method to the registered object
 
 ```
