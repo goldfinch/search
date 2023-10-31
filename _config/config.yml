@@ -1,3 +1,8 @@
 ---
 Name: goldfinch-search
 ---
+Goldfinch\Search\Search:
+  searchable_pagination: 10 # false / (numeric)
+  # searchable_limit_items: false
+  searchable:
+    # - App\Models\My_Custom_model.php
