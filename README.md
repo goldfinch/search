@@ -19,3 +19,11 @@ public static function searchable($q, $request)
     // return BlogPost::get()->filter('SearchFields:Fulltext', $q);
 }
 ```
+
+
+3) configuration for registered object only (add within the object)
+
+```
+private static $searchable_pagination = 10;
+private static $searchable_limit_items = false;
+```
