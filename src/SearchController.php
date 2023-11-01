@@ -70,7 +70,7 @@ class SearchController extends ContentController
         ]);
 
         return $this->customise([
-            'Layout' => $data->renderWith('App\Pages\Search'),
+            'Layout' => $data->renderWith(Search::class),
         ])->renderWith('Page');
     }
 

@@ -22,7 +22,7 @@
               $Text.Highlight($Up.q)
           </div>
       <% end_loop %>
-      <% include SearchPagination %>
+      <% include Goldfinch\Search\SearchPagination %>
       </div>
       <hr>
       <div>
@@ -35,7 +35,7 @@
                   </div>
                   $Text.Highlight($Up.q)
               <% end_loop %>
-              <% include SearchPagination %>
+              <% include Goldfinch\Search\SearchPagination %>
           <% end_if %>
       <% end_loop %>
       </div>
