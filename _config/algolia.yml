@@ -1,0 +1,30 @@
+---
+Name: goldfinch-search-algolia
+After: silverstripe-algolia
+---
+# SilverStripe\Core\Injector\Injector:
+#     Wilr\SilverStripe\Algolia\Service\AlgoliaService:
+#         properties:
+#             adminApiKey: "`ALGOLIA_ADMIN_API_KEY`"
+#             searchApiKey: "`ALGOLIA_SEARCH_API_KEY`"
+#             applicationId: "`ALGOLIA_SEARCH_APP_ID`"
+#             indexes:
+#                 IndexName:
+#                     includeClasses:
+#                         - SilverStripe\CMS\Model\SiteTree
+#                     indexSettings:
+#                         attributesForFaceting:
+#                             - "filterOnly(objectClassName)"
+#                 #         replicas:
+#                 #             - IndexName_Latest
+#                 # IndexName_Latest:
+#                 #     indexSettings:
+#                 #         ranking:
+#                 #             - "desc(objectCreated)"
+#                 #             - "typo"
+#                 #             - "words"
+#                 #             - "filters"
+#                 #             - "proximity"
+#                 #             - "attribute"
+#                 #             - "exact"
+#                 #             - "custom"

@@ -27,3 +27,13 @@ public static function searchable($q, $request)
 private static $searchable_pagination = 10;
 private static $searchable_limit_items = false;
 ```
+
+
+4) Algolia
+
+```
+ALGOLIA_ADMIN_API_KEY
+ALGOLIA_SEARCH_API_KEY
+ALGOLIA_SEARCH_APP_ID
+ALGOLIA_PREFIX_INDEX_NAME
+```
