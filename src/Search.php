@@ -15,7 +15,7 @@ class Search extends SiteTree
 
     private static $icon = null;
 
-    private static $icon_class = 'bi-file-earmark-easel-fill';
+    private static $icon_class = 'font-icon-search';
 
     private static $base_description = 'Search';
 

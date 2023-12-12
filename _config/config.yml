@@ -6,3 +6,13 @@ Goldfinch\Search\Search:
   # searchable_limit_items: false
   searchable:
     # - App\Models\My_Custom_model.php
+
+
+---
+Name: goldfinch-search-icon
+Only:
+  moduleexists: 'goldfinch/enchantment'
+---
+
+Goldfinch\Search\Search:
+  icon_class: 'bi-file-earmark-easel-fill'
