@@ -18,39 +18,4 @@ class Search extends SiteTree
     private static $icon_class = 'font-icon-search';
 
     private static $base_description = 'Search';
-
-    protected function onBeforeWrite()
-    {
-        parent::onBeforeWrite();
-    }
-
-    public function onBeforeDelete()
-    {
-        parent::onBeforeDelete();
-    }
-
-    public function validate()
-    {
-        $result = parent::validate();
-
-        return $result;
-    }
-
-    public function getCMSFields()
-    {
-        $fields = parent::getCMSFields();
-
-        //
-
-        return $fields;
-    }
-
-    public function getSettingsFields()
-    {
-        $fields = parent::getSettingsFields();
-
-        // ..
-
-        return $fields;
-    }
 }

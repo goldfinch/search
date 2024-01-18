@@ -2,7 +2,6 @@
 
 namespace Goldfinch\Search;
 
-use Swis\TextSnippet;
 use SilverStripe\ORM\ArrayList;
 use SilverStripe\View\ArrayData;
 use SilverStripe\ORM\PaginatedList;
