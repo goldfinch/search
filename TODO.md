@@ -28,6 +28,7 @@ private static $searchable_pagination = 10;
 private static $searchable_limit_items = false;
 ```
 
+<!-- "wilr/silverstripe-algolia": "^1.5" -->
 
 4) Algolia
 
