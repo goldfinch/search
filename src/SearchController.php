@@ -2,11 +2,11 @@
 
 namespace Goldfinch\Search;
 
-use SilverStripe\ORM\ArrayList;
-use SilverStripe\View\ArrayData;
-use SilverStripe\ORM\PaginatedList;
-use SilverStripe\Control\HTTPRequest;
 use SilverStripe\CMS\Controllers\ContentController;
+use SilverStripe\Control\HTTPRequest;
+use SilverStripe\ORM\ArrayList;
+use SilverStripe\ORM\PaginatedList;
+use SilverStripe\View\ArrayData;
 
 class SearchController extends ContentController
 {
@@ -26,8 +26,9 @@ class SearchController extends ContentController
         } elseif (strlen($q) >= 3) {
             $cfg = ss_config(Search::class);
 
-            if (!empty($cfg['searchable'])) {
+            if (! empty($cfg['searchable'])) {
                 foreach ($cfg['searchable'] as $item) {
+
                     if (method_exists($item, 'searchable')) {
                         $cfgItem = ss_config($item);
 
@@ -65,6 +66,7 @@ class SearchController extends ContentController
             'ObjectResults' => $objectResults,
             'Results' => $results,
             'q' => $q,
+            'Page' => $this,
         ]);
 
         return $this->customise([
