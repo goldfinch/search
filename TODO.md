@@ -3,10 +3,11 @@
 ```
 ---
 Name: app-search
-After:
-  - "#goldfinch-search"
-------
+After: "goldfinch/search"
+---
 Goldfinch\Search\Search:
+  searchable:
+    - ...
   ...
 ```
 
